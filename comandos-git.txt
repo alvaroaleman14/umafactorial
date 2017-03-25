@@ -1,0 +1,209 @@
+git config --global http.proxy http://proxy.lcc.uma.es:3128 
+
+// selecciona el proxy
+
+git clone https://github.com/nombre_de_usuario/umafactorial.git
+
+//Clona mi repositorio
+
+cd umafactorial
+
+//entro en el repositorio y en la rama master
+
+ls
+
+//listo los archivos
+
+
+touch factorial.java
+
+// creo un archivo java llamado factorial
+
+notepad factorial.java 
+
+//abro el archivo factorial.java con notepad
+
+git add factorial.java
+
+/actualizo los cambios hechos
+
+git config --global user.email alvaro14uma@gmail.com
+
+//accedo con mi usuario de github
+
+git config --global user.name theWUisReal
+
+//accedo con mi usuario de github
+
+git commit -m "implementacion inicial" 
+
+//hago el primer commit
+
+notepad factorial.java 
+
+// Vuelvo a modificar
+
+git add factorial.java 
+
+// Añade al repositorio
+
+git commit -m "refactorizacion"
+
+//hago un segundo commit
+
+notepad factorial.java 
+
+//vuelvo a abrir con notepad el archivo
+
+git checkout -b recursivo
+
+//creo la rama recursivo
+
+notepad factorial.java 
+
+//abro el archivo para modificarlo
+
+git add factorial.java
+
+//actualizo los cambios
+
+git commit -m "implementacion recursiva" 
+
+//hago un commit para marcar el paso por el que voy
+
+git checkout master
+
+//vuelvo a la rama master
+
+notepad factorial.java
+
+//abro el archivo para hacer mas cambios y correcciones
+
+git commit -m "correccion numeros negativos"
+
+//añado un commit con el cambio hecho
+
+git add factorial.java
+
+//actualizo cambio 
+
+git push origin master
+
+//subo a la rama master y github lo hecho hasta el momento
+
+git checkout recursivo 
+
+//voy a la rama recursivo
+
+notepad factorial.java
+
+//hago cambios en factorial.java
+
+git add factorial.java
+
+//actualizo cambios
+
+git commit -m "optimizacion"
+
+//hago un commit para marcar el cambio 
+
+git checkout master
+
+//vuelvo a la rama master
+
+git merge recursivo
+
+//junto la rama master con recursivo
+
+gitk --all 
+
+//veo como esta el trabajo
+
+git checkout -b refacIO
+
+//creo la rama refacIO
+
+notepad factorial.java
+
+//abro factorial.java para hacer cambios
+
+git add factorial.java
+
+//actualizo los cambios
+
+git commit -m "refactorizacion de metodo de entrada"
+
+//hago un commit para mostrar el cambio hecho
+
+notepad factorial.java
+
+//vuelvo a hacer cambios en factorial
+
+git add factorial.java
+
+//actualizo cambios 
+
+git stash
+
+//guardo temporalmente
+
+git checkout master
+
+//vuelvo a la rama master
+
+notepad factorial.java
+
+//una vez en la rama master hago mas cambios
+
+git add factorial.java
+
+//y los actualizo
+
+git commit -m "cambio de long a BigInteger" 
+
+//muestro el cambio hecho
+
+git stash pop
+
+//recupero los cambios
+
+git commit -m "refactorizacion de metodo de salida"
+
+//muestro el cambio hecho 
+
+git checkout master
+
+//vuelvo a la rama master
+
+git merge refacIO
+
+//junto la rama master con refacIO
+
+notepad factorial.java
+
+//abro el archivo factorial y hago cambios
+
+git add factorial.java
+
+//actualizo los cambios
+
+git commit -m "Mezcla de rama refacIO"
+
+//marco con un commit los cambios hechos
+
+git push origin master
+
+//lo subo a github y la rama master
+
+touch comandos-git.txt
+
+//creo un archivo txt
+
+notepad comandos-git.txt
+
+//lo abro con notepad
+
+
+
+
+
