@@ -34,7 +34,7 @@ scanInput.close();
 =======
 }
 public static void main(String []args) {
-long num = getNumber();
+BigInteger num = getNumber();
 showFac(num);
 >>>>>>> refacIO
 }
